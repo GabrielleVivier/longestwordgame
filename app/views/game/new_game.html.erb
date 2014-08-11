@@ -1,0 +1,11 @@
+<h1>Grid:</h1>
+
+<%= @generated_grid %>
+
+<p></p>
+
+<form action= '<%= computed_score_path %>' >
+  <label for="question">Try your best shot</label>
+  <input type="text" id="question" name="attempt" placeholder="Your try">
+  <input type="submit" value="Submit!">
+</form>

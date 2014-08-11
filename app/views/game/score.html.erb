@@ -1,0 +1,22 @@
+<h1>Your result:</h1>
+
+<h2>Message:</h2>
+<%= @result.message %>
+
+<h2>Score:</h2>
+<%= @result.score %>
+
+<h2>Translation:</h2>
+<%= @result.translation %> <br>
+
+<h2>Your average score is:</h2>
+<%= @result.average_score(session[:scores], @result.score) %> <br>
+
+<h2>You have played:</h2>
+<%= session[:number_of_games] %> game(s) <br>
+
+<p></p>
+
+<%= link_to "Play again", new_game_path %> <br>
+
+<%= link_to "Start fresh", controller: "welcome" %>
